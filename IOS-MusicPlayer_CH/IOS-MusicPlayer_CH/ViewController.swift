@@ -166,6 +166,27 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         // Do any additional setup after loading the view.
 //        self.addViewsWithCode()
         self.initializePlayer()
+        
+        self.addSubView()
+    }
+    
+    func addSubView() {
+        let frame = CGRect(x: 90, y: 450, width: 240, height: 120)
+        let subView = UIView(frame: frame)
+        
+        subView.backgroundColor = UIColor.red
+        
+        print("subview frame \(subView.frame)")
+        print("subview bounds \(subView.bounds)")
+        
+        print("subview frame origin \(subView.frame.origin)")
+        print("subview bounds origin \(subView.bounds.origin)")
+        
+        
+        view.addSubview(subView)
+        
+//        sleep(5);
+//        subView.removeFromSuperview()
     }
     
     // MARK: - IBAction
