@@ -90,7 +90,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         centerY = NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 0.8, constant: 0)
         
         let width: NSLayoutConstraint
-        width = button.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
+        width = button.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.3)
         
         let ratio: NSLayoutConstraint
         ratio = button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 1)
@@ -164,7 +164,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.addViewsWithCode()
+//        self.addViewsWithCode()
         self.initializePlayer()
     }
     
